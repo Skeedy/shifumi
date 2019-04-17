@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<title> Shifumi </title>
+		<meta charset="UTF-8">
+		<link rel ="stylesheet" href ="./style.css">		
+		
+	</head>
+	<body>
+		
+		<h1> Let's play Shifumi !</h1>
+		<div id= "btn">
+			
+			<div>
+				<span id ="countdown">Press Go !</span>
+			</div>
+		</div> 
+			<div id="boite">
+			<div id= "center"> 
+				<button id ="go"> GO ! </button>
+				<div id="bouton" onclick="removeclick('ciseaux', 'pierre', 'feuille')">
+					<button class="btn" id ="ciseaux" disabled> Ciseaux </button>
+					<button class="btn" id ="pierre" disabled> Pierre </button>
+					<button class="btn" id ="feuille" disabled > Feuille </button>
+				</div>
+			</div>
+				<div>
+					<h2>You</h2>
+					<img class="img" id ="player" src="./int.png">
+				</div>
+				
+				<div>	
+					<div>
+					<h2>CPU</h2>
+					<img class="img" id="CPU" src ="./int.png">
+					</div>
+				</div>
+			</div>
+		
+		<h3> Score:</h3>
+		<div>
+			<span id = "scoreP">0</span>-<span id = "scoreCPU">0</span> 
+		</div>
+	</body>
+	<script type="text/javascript"  src="./script.js"> </script>
+</html>
